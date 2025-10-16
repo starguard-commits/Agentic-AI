@@ -16,6 +16,20 @@ Comprehensive design with 3-phase decomposition system, SQLite schema, data mode
 
 ---
 
+## Reasoning & Problem-Solving Process
+
+**AI-assisted development as a core workflow**
+Integrated AI Agent throughout the development process—from architectural design discussions to rapid prototyping and documentation. Used it as a thinking partner to explore trade-offs, validate design decisions, and accelerate implementation.
+
+**Deep exploration before commitment**
+Evaluated 10+ architectural approaches for Large Context Handling (3-tier storage, event sourcing, graph-based, hierarchical) before selecting MapReduce-inspired decomposition. Each alternative documented with trade-offs. For AgentMesh, compared NetworkX vs Neo4j, tag-based vs RBAC, GraphQL vs REST—chose hybrid PostgreSQL + NetworkX for the right balance of simplicity and production-readiness.
+
+**Developer experience as first-class concern**
+Built decorator pattern reducing agent integration from ~20 lines to ~5 lines (80% less boilerplate). Production systems succeed only if adoption is frictionless. If integration is hard, teams won't use it—no matter how powerful the underlying system.
+
+---
+
+
 ## Quick Overview
 
 ### 🔗 AgentMesh - Shared Brain for AI Agents
